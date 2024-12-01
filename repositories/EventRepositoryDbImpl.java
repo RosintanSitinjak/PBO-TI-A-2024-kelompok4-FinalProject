@@ -43,8 +43,8 @@ public class EventRepositoryDatabaseImpl implements EventRepository {
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, event.getnameEvent());
-            statement.setString(2, event.dateEvent);
-            statement.setString(3, event.eventLocation);
+            statement.setString(2, event.dateEvent());
+            statement.setString(3, event.eventLocation());
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -71,8 +71,8 @@ public class EventRepositoryDatabaseImpl implements EventRepository {
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, event.getnameEvent());
-            statement.setString(2, event.dateEvent);
-            statement.setString(3, event.eventLocation);
+            statement.setString(2, event.dateEvent());
+            statement.setString(3, event.eventLocation());
             statement.setInt(4, id);
             int rowsUpdated = statement.executeUpdate();
             return rowsUpdated > 0;
