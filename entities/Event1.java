@@ -30,4 +30,16 @@ public class Event1{
     public ArrayList<PesertaInfo> getPesertaList() {
         return pesertaList;
     }
+
+    public String getNameEvent() {
+        return nameEvent;
+    }
+
+    public String getDateEvent() {
+        return dateEvent;
+    }
+
+    public String getEventLocation() {
+        return eventLocation;
+    }
 }
