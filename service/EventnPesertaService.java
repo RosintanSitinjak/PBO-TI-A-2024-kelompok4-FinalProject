@@ -3,7 +3,7 @@ package service;
 import entities.Event1;
 
 public interface EventnPesertaService {
-    EventList[] getEventList();
+    //EventList[] getEventList();
     void addEvent(String nameEvent, String dateEvent, String eventLocation);
     void tambahPeserta(String nama, String nim, Event1 eventpilih);
     Boolean removeEvent(Integer number);
