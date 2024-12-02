@@ -27,6 +27,7 @@ public class EventViewImpl implements EventView{
 
     @Override
     public void showMainMenu() {
+        System.out.println("Alhamdullilah bisa nge push juga");
 
     }
 
