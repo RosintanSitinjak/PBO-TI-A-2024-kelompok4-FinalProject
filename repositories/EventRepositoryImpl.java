@@ -1,49 +1,33 @@
 package repositories;
-
-package repositories.impl;
-
-import entities.Event1;
-import repositories.EventRepository;
+import entities.EventList;
+import config.Database;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class EventRepositoryImpl implements EventRepository {
-    private final List<Event1> events = new ArrayList<>();
-
     @Override
-    public List<Event1> getAllEvents() {
-        return new ArrayList<>(events);
+    public void addEvent(EventList event) {
+        Database.eventList.add(event);
     }
 
     @Override
-    public void addEvent(Event1 event) {
-        events.add(event);
+    public void removeEvent(EventList event) {
+        Database.eventList.remove(event);
     }
 
     @Override
-    public boolean removeEvent(Integer id) {
-        if (id < 0 || id >= events.size()) {
-            return false;
+    public EventList getEventByName(String nameEvent) {
+        for (EventList event : Database.eventList) {
+            if (event.getNameEvent().equalsIgnoreCase(nameEvent)) {
+                return event;
+            }
         }
-        events.remove((int) id);
-        return true;
+
+        return null;
     }
 
     @Override
-    public boolean updateEvent(Integer id, Event1 updatedEvent) {
-        if (id < 0 || id >= events.size()) {
-            return false;
-        }
-        events.set(id, updatedEvent);
-        return true;
-    }
-
-    @Override
-    public Event1 findById(Integer id) {
-        if (id < 0 || id >= events.size()) {
-            return null;
-        }
-        return events.get(id);
+    public ArrayList<EventList> getAllEvents() {
+        return Database.eventList;
     }
 }

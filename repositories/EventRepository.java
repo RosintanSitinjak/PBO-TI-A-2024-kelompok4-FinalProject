@@ -1,17 +1,13 @@
+
 package repositories;
 
-import entities.Event1;
+import entities.EventList;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public interface EventRepository {
-    List<Event1> getAllEvents();
-
-    void addEvent(Event1 event);
-
-    boolean removeEvent(Integer id);
-
-    boolean updateEvent(Integer id, Event1 event);
-
-    Event1 findById(Integer id);
+    void addEvent(EventList event);
+    void removeEvent(EventList event);
+    EventList getEventByName(String nameEvent);
+    ArrayList<EventList> getAllEvents();
 }
