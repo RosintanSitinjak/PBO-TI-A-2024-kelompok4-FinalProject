@@ -55,12 +55,32 @@ public class EventViewImpl implements EventView{
     }
 
     @Override
-    public void showPesertaEvent() {
-
+    public void removeEvent() {
+        System.out.print("Masukkan Index Event untuk dihapus: ");
+        String name = scanner.nextLine();
+        eventService.removeEvent(name);
+//        int index = scanner.nextInt();
+//        scanner.nextLine();
+//        eventService.removeEvent(index - 1);
     }
 
     @Override
-    public void run() {
+    public void updateEvent(){
+        System.out.print("Nama Event yang akan diupdate: ");
+        String name = scanner.nextLine();
+        System.out.print("Tanggal Event Baru: ");
+        String date = scanner.nextLine();
+        System.out.print("Lokasi Event Baru: ");
+        String location = scanner.nextLine();
+        eventService.updateEvent(name, date, location);
+    }
 
+    @Override
+    public void listAllEvents() {
+        eventService.getAllEvents().forEach(event -> {
+            System.out.println("Nama Event: " + event.getNameEvent());
+            System.out.println("Tanggal: " + event.getDateEvent());
+            System.out.println("Lokasi: " + event.getEventLocation());
+        });
     }
 }
