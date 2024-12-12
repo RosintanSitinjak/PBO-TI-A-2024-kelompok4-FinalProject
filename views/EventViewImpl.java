@@ -44,8 +44,14 @@ public class EventViewImpl implements EventView{
     }
 
     @Override
-    public void showEventMenu() {
-
+    public void addEvent() {
+        System.out.print("Nama Event: ");
+        String name = scanner.nextLine();
+        System.out.print("Tanggal Event: ");
+        String date = scanner.nextLine();
+        System.out.print("Lokasi Event: ");
+        String location = scanner.nextLine();
+        eventService.addEvent(name, date, location);
     }
 
     @Override
