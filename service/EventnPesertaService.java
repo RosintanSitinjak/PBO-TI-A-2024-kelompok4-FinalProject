@@ -1,7 +1,5 @@
 package service;
 
-import entities.Event1;
-
 public interface EventnPesertaService {
     //EventList[] getEventList();
     void addEvent(String nameEvent, String dateEvent, String eventLocation);

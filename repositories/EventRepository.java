@@ -1,7 +1,5 @@
 package repositories;
 
-import entities.Event1;
-
 import java.util.List;
 
 public interface EventRepository {

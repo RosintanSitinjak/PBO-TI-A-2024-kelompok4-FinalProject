@@ -2,9 +2,6 @@ package repositories;
 
 package repositories.impl;
 
-import entities.Event1;
-import repositories.EventRepository;
-
 import java.util.ArrayList;
 import java.util.List;
 
