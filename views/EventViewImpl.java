@@ -16,9 +16,31 @@ public class EventViewImpl implements EventView{
 
 
     @Override
-    public void showMainMenu() {
-        System.out.println("Alhamdullilah bisa nge push juga");
+    public void displayMenu() {
+        while (true) {
+            System.out.println("====== Menu Event ======");
+            System.out.println("1. Add Event");
+            System.out.println("2. Remove Event");
+            System.out.println("3. Show All Event");
+            System.out.println("4. Update Event");
+            System.out.println("0. Exit");
+            System.out.println("========================");
+            System.out.print("Enter Your Menu Option: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
+            switch (choice) {
+                case 1 -> addEvent();
+                case 2 -> removeEvent();
+                case 3 -> listAllEvents();
+                case 4 -> updateEvent();
+                case 0 -> {
+                    System.out.println("Thankyou!");
+                    return;
+                }
+                default -> System.out.println("Invalid Choice!");
+            }
+        }
     }
 
     @Override
