@@ -1,7 +1,6 @@
+package eventPesertaApp.services;
 
-package services;
-
-import entities.EventList;
+import eventPesertaApp.entities.EventList;
 
 import java.util.ArrayList;
 

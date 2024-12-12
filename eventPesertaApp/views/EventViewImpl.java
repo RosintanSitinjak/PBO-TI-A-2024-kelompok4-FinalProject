@@ -1,14 +1,18 @@
-package views;
+package eventPesertaApp.views;
 
-import entities.EventList;
-import services.EventService;
+import eventPesertaApp.entities.EventList;
+import eventPesertaApp.services.EventService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
-public class EventViewImpl implements EventView {
+@Component
+public class EventViewImpl implements EventView{
     private final EventService eventService;
     private final Scanner scanner = new Scanner(System.in);
 
+    @Autowired
     public EventViewImpl(EventService eventService) {
         this.eventService = eventService;
     }

@@ -1,6 +1,4 @@
-package entities;
-
-import jdk.jfr.Event;
+package eventPesertaApp.entities;
 
 public class PesertaList {
     private String nama;
