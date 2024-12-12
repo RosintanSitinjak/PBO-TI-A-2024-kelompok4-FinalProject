@@ -1,8 +1,9 @@
 package views;
 
 public interface EventView {
-    void showMainMenu();
-    void showEventMenu();
-    void showPesertaEvent();
-    void run();
+    void displayMenu();
+    void addEvent();
+    void removeEvent();
+    void updateEvent();
+    void listAllEvents();
 }
