@@ -1,4 +1,4 @@
-package views;
+package eventPesertaApp.views;
 
 public interface EventView {
     void displayMenu();

@@ -1,4 +1,4 @@
-package entities;
+package eventPesertaApp.entities;
 import java.util.ArrayList;
 
 public class EventList {
@@ -63,4 +63,3 @@ public class EventList {
         return nameEvent.hashCode(); // Hash berdasarkan nama event
     }
 }
-

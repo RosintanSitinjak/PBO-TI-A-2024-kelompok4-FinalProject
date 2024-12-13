@@ -1,31 +1,28 @@
-package views;
+package eventPesertaApp.views;
 
-import services.EventService;
-
-//nunggu selesai entities sama services
+import eventPesertaApp.services.EventService;
 
 import java.util.Scanner;
 
-public class EventViewImpl implements EventView{
+public class EventViewImpl implements EventView {
     private final EventService eventService;
     private final Scanner scanner = new Scanner(System.in);
 
-    public EventViewImpl(EventService eventService){
+    public EventViewImpl(EventService eventService) {
         this.eventService = eventService;
     }
-
 
     @Override
     public void displayMenu() {
         while (true) {
             System.out.println("====== Menu Event ======");
-            System.out.println("1. Add Event");
-            System.out.println("2. Remove Event");
-            System.out.println("3. Show All Event");
+            System.out.println("1. Tambah Event");
+            System.out.println("2. Hapus Event");
+            System.out.println("3. Lihat Semua Event");
             System.out.println("4. Update Event");
-            System.out.println("0. Exit");
+            System.out.println("0. Keluar");
             System.out.println("========================");
-            System.out.print("Enter Your Menu Option: ");
+            System.out.print("Masukkan Pilihan Menu: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
@@ -35,10 +32,10 @@ public class EventViewImpl implements EventView{
                 case 3 -> listAllEvents();
                 case 4 -> updateEvent();
                 case 0 -> {
-                    System.out.println("Thankyou!");
+                    System.out.println("Terima kasih!");
                     return;
                 }
-                default -> System.out.println("Invalid Choice!");
+                default -> System.out.println("Pilihan tidak valid!");
             }
         }
     }

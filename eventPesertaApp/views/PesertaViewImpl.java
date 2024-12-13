@@ -1,9 +1,9 @@
-package views;
+package eventPesertaApp.views;
 
-import entities.EventList;
-import entities.PesertaList;
-import services.EventService;
-import services.PesertaService;
+import eventPesertaApp.entities.EventList;
+import eventPesertaApp.entities.PesertaList;
+import eventPesertaApp.services.EventService;
+import eventPesertaApp.services.PesertaService;
 
 import java.util.Scanner;
 
@@ -76,7 +76,6 @@ public class PesertaViewImpl implements PesertaView {
         System.out.println("Peserta added successfully!");
     }
 
-
     @Override
     public void removePeserta() {
         System.out.println("\n=== Remove Peserta ===");
@@ -112,7 +111,3 @@ public class PesertaViewImpl implements PesertaView {
         }
     }
 }
-
-
-
-

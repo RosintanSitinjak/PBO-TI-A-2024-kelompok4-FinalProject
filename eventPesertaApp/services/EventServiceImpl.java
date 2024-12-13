@@ -1,7 +1,7 @@
-package services;
+package eventPesertaApp.services;
 
-import entities.EventList;
-import repositories.EventRepository;
+import eventPesertaApp.entities.EventList;
+import eventPesertaApp.repositories.EventRepository;
 
 import java.util.ArrayList;
 
@@ -46,4 +46,3 @@ public class EventServiceImpl implements EventService {
         return eventRepository.getAllEvents();
     }
 }
-

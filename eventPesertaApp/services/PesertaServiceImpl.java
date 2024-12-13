@@ -1,10 +1,8 @@
-package services;
+package eventPesertaApp.services;
 
-package services;
-
-import entities.EventList;
-import entities.PesertaList;
-import repositories.PesertaRepository;
+import eventPesertaApp.entities.EventList;
+import eventPesertaApp.entities.PesertaList;
+import eventPesertaApp.repositories.PesertaRepository;
 
 import java.util.ArrayList;
 
@@ -73,4 +71,3 @@ public class PesertaServiceImpl implements PesertaService {
         }
     }
 }
-
