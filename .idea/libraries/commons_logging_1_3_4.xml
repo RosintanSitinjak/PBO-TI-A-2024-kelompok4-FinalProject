@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-logging-1.3.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/commons-logging-1.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/spring-core-6.1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/spring-aop-6.1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/slf4j-api-2.0.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/mysql-connector.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/spring-expression-6.1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/spring-context-6.1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/lombok-1.18.34.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../UNAI TI/PBO-HOL/jar1/spring-beans-6.1.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
